@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 300px;
+  position: relative;
+}
+.sq1,
+.sq2,
+.sq3,
+.sq4 {
+  position: absolute;
+  width: 150px;
+}
+h1 {
+  position: absolute;
+  font-size: xx-large;
+  text-align: center;
+  right: 345px;
+}
+
+.sq1 {
+  background-color: steelblue;
+  bottom: 150px;
+  left: 75px;
+}
+.sq2 {
+  background-color: yellow;
+  top: 150px;
+  left: 75px;
+}
+.sq3 {
+  background-color: dimgray;
+  bottom: 150px;
+}
+.sq4 {
+  top: 150px;
+  background-color: rosybrown;
+}
+
+section:hover .sq1 {
+  transform: translateX(-100%) rotate(90deg);
+}
+section:hover .sq2 {
+  transform: translateX(-100%) rotate(-90deg);
+}
+section:hover .sq3 {
+  transform: translateX(100%) rotate(-90deg);
+}
+section:hover .sq4 {
+  transform: translateX(100%) rotate(90deg);
+}
+section:hover h1 {
+  transform: scale(1.5);
+}
+div {
+  aspect-ratio: 1/1;
+  transition-duration: 1s;
+}
